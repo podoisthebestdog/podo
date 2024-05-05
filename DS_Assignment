@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+char operator_array[];//연산자 배열 선언_stack1
+int operand_array[]; //피연산자 배열 선언_stack2
+
+int input(void) {
+	while (1) {
+		if (operand_array[-1] == 000) { return 0; } //while문 빠져나가기
+		printf("계산하고 싶은 수식을 입력해주세요.");
+		printf("입력을 종료하고 싶으면 '000'을 입력해주세요. e.g. : 000 ");
+		printf(" : ");
+
+		scanf("%d", operand_array);
+		scanf("%s", operator_array);
+	 
+	}
+	
+}
+
+
+
+
